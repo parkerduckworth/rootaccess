@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br/>
+<main role="main">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<svg class="bd-placeholder-img" width="100%" height="100%"
+					xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+					<rect width="100%" height="100%" fill="#777"/>
+				</svg>
+				<div class="container">
+					<div class="carousel-caption text-left">
+						<h1>Learn through application.</h1>
+						<p>The academy is broken down into modules, each of which culminate in an exciting project, including building a database, a web server, and many others.</p>
+						<p>
+                            <a class="btn btn-lg btn-primary" href="{% url 'signup' %}" role="button">Sign up today</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<svg class="bd-placeholder-img" width="100%" height="100%"
+					xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+					<rect width="100%" height="100%" fill="#777"/>
+				</svg>
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Individualized instruction.</h1>
+						<p>Orientation begins with an assessment to determine ability level. A training plan is developed from the results, and a mentor is assigned.</p>
+						<p>
+							<a class="btn btn-lg btn-primary" href="#academy-details" role="button">Learn more</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<svg class="bd-placeholder-img" width="100%" height="100%"
+					xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+					<rect width="100%" height="100%" fill="#777"/>
+				</svg>
+				<div class="container">
+					<div class="carousel-caption text-right">
+						<h1>Don't just take it from us</h1>
+						<p>Students across the world have leveraged the skills gained at Root Access to launch successful startups, and start new careers with notable industry leaders.</p>
+						<p>
+							<a class="btn btn-lg btn-primary" href="#" role="button">Testimonials</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div class="container marketing">
+		<hr class="featurette-divider">
+        <div class="row featurette" id="academy-details">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">The World is
+                    <span class="text-muted"> networked.</span>
+                </h2>
+                <p class="lead">Learn how to bring value to humans around the globe.</p>
+            </div>
+            <div class="col-md-5">
+                {% load static %}
+                <img class="featurette-image" src="{% static "images/web-development.jpg" %}">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Hardware is being
+                    <span class="text-muted"> abstracted away.</span>
+                </h2>
+                <p class="lead">Gain a deep understanding of computer science and complex software systems.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                {% load static %}
+                <img class="featurette-image" src="{% static "images/software-development.jpg" %}">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">What does it all
+                    <span class="text-muted"> mean?</span>
+                </h2>
+                <p class="lead">Data is the new world currency. Help solve difficult problems by highlighting key trends.</p>
+            </div>
+            <div class="col-md-5">
+                {% load static %}
+                <img class="featurette-image" src="{% static "images/data-visualization.jpg" %}">
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

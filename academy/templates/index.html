@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+<hr/>
+{% block content %}
+
+<div class="container">
+	<div class="text-center">
+        <br/>
+        {% load static %}
+		<img class="logo" src="{% static "images/logo.png" %}" alt="Logo">
+		</div>
+		<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light index-header">
+			<p>Learning how to code is difficult and expensive. Right?</p>
+            <br/>
+			<p>Not anymore. Root Access is a one-on-one code mentorship program that focuses on teaching the skills needed to succeed in the software industry with an affordable, flexible, and easy to understand curriculum.</p>
+			<p>
+				<a class="btn btn-info btn-lg" href="{% url 'about' %}" role="button">Learn More</a>
+			</p>
+		</div>
+		<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+			<div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+				<div class="my-3 py-3">
+                    <i class="fas fa-chart-line fa-5x"></i>
+					<h2 class="display-5">Tailored Progression</h2>
+					<p class="lead">Start out with the basics and quickly improve.</p>
+				</div>
+			</div>
+			<div class="bg-secondary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+				<div class="my-3 p-3">
+                    <i class="fas fa-tools fa-5x"></i>
+					<h2 class="display-5">Build Useful Programs</h2>
+					<p class="lead">Write real software that has actual utility.</p>
+				</div>
+			</div>
+		</div>
+		<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+			<div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+				<div class="my-3 p-3">
+                    <i class="fas fa-smile-beam fa-5x"></i>
+					<h2 class="display-5">Satisfaction Guaranteed</h2>
+					<p class="lead">Pay by module. Cancel anytime for a refund if you are not satisfied.</p>
+				</div>
+			</div>
+			<div class="bg-info mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+				<div class="my-3 py-3">
+                    <i class="fas fa-chalkboard-teacher fa-5x"></i>
+					<h2 class="display-5">Don't Get Lost in the Crowd</h2>
+					<p class="lead">Receive personal one-on-one instruction from an experienced developer.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

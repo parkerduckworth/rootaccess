@@ -1,0 +1,8 @@
+academy/migrations/
+academy/__pycache__/
+rootaccess/__pycache__/
+rootaccess/settings.py
+rootaccess/wsgi.py
+*.sqlite3
+.idea/
+.DS_Store
